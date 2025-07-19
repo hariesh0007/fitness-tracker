@@ -1,0 +1,54 @@
+
+ STEP 1: DOWNLOAD & EXTRACT
+
+- Download the project ZIP from GitHub.
+- Extract all folders (frontend, backend, public, etc.) into one main folder, e.g., fitness-tracker.
+
+ STEP 2: BACKEND SETUP
+
+Open CMD / Terminal and run:
+
+cd backend
+
+# Install dependencies:
+npm install
+
+# Run backend server:
+node index.js
+# OR (if using nodemon):
+npx nodemon index.js
+
+* Backend runs at: http://localhost:5000
+
+ STEP 3: FRONTEND SETUP
+Open CMD / Terminal and run:
+
+cd ../frontend
+
+# Install dependencies:
+npm install
+
+# Start frontend development server:
+npm run dev
+
+* Frontend opens at: http://localhost:5173
+
+ STEP 4: DATABASE SETUP
+
+- Ensure MySQL / other database is installed & running.
+- Import provided SQL tables.
+- Update DB connection settings inside backend folder (db.js / .env).
+
+ STEP 5: ACCESS YOUR APP
+- Visit frontend in your browser:
+  http://localhost:5173
+
+- Backend API runs at:
+  http://localhost:5000
+
+Project Folders Summary:
+- backend/  → Node.js & Express API
+- frontend/ → React (Vite) frontend
+- public/   → Static assets (if any)
+
+You're ready to go! 
